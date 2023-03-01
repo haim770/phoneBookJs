@@ -1,0 +1,69 @@
+<!--presented by haim monhait and lior shushan-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/34c2ad97f5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/normalise.css">
+  <link rel="stylesheet" href="./css/phoneBook.css">
+  <script src="./js/contact.js" defer></script>
+  <script src="./js/layout.js" defer></script>
+
+  <title>phonebook</title>
+</head>
+
+<body>
+  <header><button id="night" name="changeBackground" type="button">night</button>
+    <h1>phonebook</h1>
+  </header>
+
+  <main>
+    <nav>
+      <p><input aria-label="search" type="text" name="search_name" id="search_name">
+      </p> <button type="button" class="add_contact"><i class="fas fa-user-plus"></i>
+      </button>
+      <button type="button" class="delete_all"><i class="fas fa-trash-alt"></i></button>
+    </nav>
+    <!--make the phone book
+    <a href="https://icons8.com/icon/82712/search">Search icon by Icons8</a>-->
+    <ul class="all_contacts">
+      <!--this is the structure of html we build-->
+      <!-- <li class="contacts">
+        <p class="name"></p>
+        <p class="phone"></p>
+        <button type="button" class="btn delete_one"><i class="fas fa-trash-alt"></i></button>
+        <button type="button" class="btn edit"><i class="fas fa-edit"></i></button>
+      </li>
+      <li class="contacts">
+        <p class="name">haim</p>
+        <p class="phone">phone1</p>
+        <button type="button" class="btn delete"><i class="fas fa-trash-alt"></i></button>
+        <button type="button"><i class="fas fa-edit"></i></button>
+      </li> -->
+    </ul>
+    <!--form to add contact and we will modify it to edit and display-->
+    <div>
+      <form>
+        <h2>add contact</h2>
+        <label><span>enter name</span> <input type="text" name="form_name" id="form_name" required></label>
+        <label><span>enter phone format "04-8888888"</span><input type="tel" name="form_tel" id="form_tel"
+            placeholder="04-82222222" required></label>
+        <label><span>enter mail</span><input type="email" id="form_mail" name="form_mail"
+            placeholder="aaa@gmail.com"></label>
+        <label><span>enter address</span><input type="text" id="form_address" name="form_address"></label>
+        <textarea id="form_text" name="form_text" rows="5" placeholder="free text"></textarea>
+        <fieldset><button id="form_submit" name="form_submit">submit</button><button type="button" id="form_out"
+            name="form_out">exit</button></fieldset>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>haim monhait&&lior shushan <i class="far fa-copyright"></i></p>
+  </footer>
+</body>
+
+</html>
